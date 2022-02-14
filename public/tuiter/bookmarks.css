@@ -55,9 +55,10 @@ body {
     border: 1px solid rgb(110, 118, 125);
     position: relative;
     width: 504px;
-    height: 170px;
+    height: 190px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    padding-top: 12px;
 }
 
 .wd-avatar {
