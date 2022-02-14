@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.wd-title {
+    margin-left: 16px;
+    margin-top: 12px;
+    color: white;
+    font-size: 20px;
+}
+
+.wd-subtitle {
+    margin-left: 16px;
+    font-size: 13px;
+    color: lightgray;
+    margin-bottom: 12px;
+}
+
+.wd-name {
+    color: white;
+    float: left;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.wd-content {
+    color: white;
+    float: left;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    width: 506px;
+}
+
+.wd-content-container {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    margin-left: 12px;
+}
+
+.wd-img-container {
+    border: 1px solid rgb(110, 118, 125);
+    position: relative;
+    margin-top: 12px;
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.wd-text-container {
+    border: 1px solid rgb(110, 118, 125);
+    position: relative;
+    width: 504px;
+    height: 170px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.wd-avatar {
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 12px;
+    float: left;
+}
+
+.wd-followed {
+    margin-left: 12px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}

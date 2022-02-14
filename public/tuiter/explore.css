@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+}
+
+.wd-search-border {
+    border-radius: 50px;
+    padding-right: 12px;
+    height: 50px;
+    width: 95%;
+}
+
+.wd-search-border-black {
+    border-color: #000000;
+    background-color: #212326;
+}
+.wd-setting-btn {
+    color: rgb(29, 161, 242);
+    margin-left: 10px;
+}
+input, select, textarea{
+    color: white;
+}
+textarea:focus, input:focus {
+    color: white;
+}
+.wd-tag {
+    float: left;
+    width: 16%;
+    height: 30px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-align: center;
+}
+.wd-tag-active {
+    float: left;
+    width: 16%;
+    height: 30px;
+    border-bottom: rgb(29, 161, 242);
+    border-bottom-style: inset;
+    border-bottom-width: 5px;
+    border-radius: 5px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-align: center;
+}
+.wd-tag-link {
+    flex-direction: column;
+    cursor: pointer;
+    align-content: center;
+    font-size: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+}
+#foryou{
+    font-size: 25px;
+    color: rgb(29, 161, 242);
+}
+#covid, #trending, #news, #sports, #entertainment{
+    font-size: 25px;
+    color: rgb(110, 118, 125);
+}
+.wd-div-middle {
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.wd-div-top {
+    color: rgb(110,118,125);
+    font-size: 13px;
+    border-width: thin;
+    margin-top: 10px;
+}
+.wd-div-bottom {
+    color: rgb(110,118,125);
+    font-size: 13px;
+    border-width: thin;
+}
+.wd-div-top-bold {
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
