@@ -1,87 +1,72 @@
-body {
+#body-container {
     background-color: black;
 }
 
-.wd-search-border {
-    border-radius: 50px;
-    padding-right: 12px;
-    height: 50px;
-    width: 95%;
+.wd-list-group-mine .list-group-item {
+    background-color: black;
 }
 
-.wd-search-border-black {
-    border-color: #000000;
-    background-color: #212326;
+.wd-list-group-mine .list-group-item.disabled {
+    background-color: black;
 }
-.wd-setting-btn {
-    color: rgb(29, 161, 242);
-    margin-left: 10px;
+
+.wd-list-group-mine .list-group-item.active {
+    background-color: black;
+    border-color: black;
 }
-input, select, textarea{
-    color: white;
+
+.wd-list-group-right .list-group-item {
+    background-color: #16181C;
 }
-textarea:focus, input:focus {
-    color: white;
+
+.wd-list-group-right .list-group-item.disabled {
+    background-color: #16181C;
 }
-.wd-tag {
-    float: left;
-    width: 16%;
-    height: 30px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    text-align: center;
+
+.wd-list-group-right .list-group-item.active {
+    background-color: #16181C;
+    border: none;
 }
-.wd-tag-active {
-    float: left;
-    width: 16%;
-    height: 30px;
-    border-bottom: rgb(29, 161, 242);
-    border-bottom-style: inset;
-    border-bottom-width: 5px;
-    border-radius: 5px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    text-align: center;
+
+.wd-input-group .form-control {
+    background-color: #212327;
+    border-color: #212327;
 }
-.wd-tag-link {
-    flex-direction: column;
-    cursor: pointer;
-    align-content: center;
+
+.wd-nav-link .nav-link {
+    color: grey;
+}
+
+.wd-row-border .border {
+    border-color: rgb(110,118,125) !important;
+}
+
+.wd-content {
     font-size: 15px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-decoration: none;
-}
-#foryou{
-    font-size: 25px;
-    color: rgb(29, 161, 242);
-}
-#covid, #trending, #news, #sports, #entertainment{
-    font-size: 25px;
-    color: rgb(110, 118, 125);
-}
-.wd-div-middle {
     color: white;
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
-.wd-div-top {
-    color: rgb(110,118,125);
-    font-size: 13px;
-    border-width: thin;
-    margin-top: 10px;
-}
-.wd-div-bottom {
-    color: rgb(110,118,125);
-    font-size: 13px;
-    border-width: thin;
-}
-.wd-div-top-bold {
+
+.wd-content-white {
     color: white;
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+}
+
+.wd-content-grey {
+    color: grey;
+}
+
+.wd-content-blue {
+    color: #3882BA;
+    !important;
+}
+
+.wd-background-white {
+    background-color: white;
+}
+
+a:link, a:visited {
+    color: grey;
+}
+
+a:hover, a:active {
+    background-color: grey;
 }
