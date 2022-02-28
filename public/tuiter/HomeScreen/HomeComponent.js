@@ -21,7 +21,7 @@ const HomeComponent = () => {
                     </div>
                 </div>
                 <div class="container mt-1 mb-1">
-                    <text style="color: rgb(110, 118, 125);"><i class="fa fa-comment"></i>&nbsp;4.2K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-retweet"></i>&nbsp;3.5K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-heart"></i>&nbsp;37.5K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-share"></I></text>
+                    <text style="color: rgb(110, 118, 125);"><i class="fa fa-comment"></i>&nbsp;4.2K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-retweet"></i>&nbsp;3.5K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-heart" style="color:red;"></i>&nbsp;37.5K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-share"></I></text>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@ const HomeComponent = () => {
                     </div>
                 </div>
                 <div class="container mt-1 mb-1">
-                    <text style="color: rgb(110, 118, 125);"><i class="fa fa-comment"></i>&nbsp;965&emsp;&emsp;&emsp;&emsp;<i class="fa fa-retweet"></i>&nbsp;2.4K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-heart"></i>&nbsp;4K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-share"></I></text>
+                    <text style="color: rgb(110, 118, 125);"><i class="fa fa-comment"></i>&nbsp;965&emsp;&emsp;&emsp;&emsp;<i class="fa fa-retweet"></i>&nbsp;2.4K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-heart" style="color:red;"></i>&nbsp;4K&emsp;&emsp;&emsp;&emsp;<i class="fa fa-share"></I></text>
                 </div>
             </div>
         </div>
