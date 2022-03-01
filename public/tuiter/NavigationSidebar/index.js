@@ -2,8 +2,8 @@ const NavigationSidebar = () => {
     return (`
         <div class="list-group">
             <a class="list-group-item disabled" href="/"><i class="fab fa-twitter" style="color: white"></i></a>
-            <a href="../home.html" class="list-group-item list-group-item-action"><i class="fa fa-home"></i> <div class="d-none d-xl-inline-block">Home</div></a>
-            <a href="../explore.html" class="list-group-item list-group-item-action active"><i class="fa fa-hashtag"></i> <div class="d-none d-xl-inline-block">Explore</div></a>
+            <a href="../HomeScreen/home.html" class="list-group-item list-group-item-action" id="home"><i class="fa fa-home"></i> <div class="d-none d-xl-inline-block">Home</div></a>
+            <a href="../ExploreScreen/explore.html" class="list-group-item list-group-item-action" id="explore"><i class="fa fa-hashtag"></i> <div class="d-none d-xl-inline-block">Explore</div></a>
             <a href="../notifications.html" class="list-group-item list-group-item-action"><i class="fa fa-bell"></i> <div class="d-none d-xl-inline-block">Notifications</div></a>
             <a href="../messages.html" class="list-group-item list-group-item-action"><i class="fa fa-envelope"></i> <div class="d-none d-xl-inline-block">Message</div></a>
             <a href="../bookmarks.html" class="list-group-item list-group-item-action"><i class="fa fa-bookmark"></i> <div class="d-none d-xl-inline-block">Bookmarks</div></a>
@@ -16,6 +16,17 @@ const NavigationSidebar = () => {
                class="btn btn-primary btn-block rounded-pill">
                 Tweet</a>
         </div>
+        <script>
+
+            $( document ).ready(function() {
+                var url = window.location.href;
+                var token = url.split('/');
+                var index = token[token.length-1].split('.');
+                var name = "#" + index[0];
+                $(".list-group .list-group-item").removeClass("active");
+                $(name).addClass("active");
+            });
+        </script>
     `);
 }
 export default NavigationSidebar;
