@@ -6,6 +6,7 @@ import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import './vendors/bootstrap/css/bootstrap.min.css';
+import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
 

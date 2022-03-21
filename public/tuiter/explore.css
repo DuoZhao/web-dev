@@ -38,7 +38,7 @@
 }
 
 .wd-row-border .border {
-    border-color: rgb(110,118,125) !important;
+    border-color: rgb(110, 118, 125) !important;
 }
 
 .wd-content {
@@ -56,7 +56,7 @@
 
 .wd-content-blue {
     color: #3882BA;
-    !important;
+/important;
 }
 
 .wd-background-white {
