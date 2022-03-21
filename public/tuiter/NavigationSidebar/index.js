@@ -20,7 +20,7 @@ const NavigationSidebar = () => {
             $(function() {
                 var url = window.location.href;
                 var token = url.split('/');
-                var index = token[token.length-1].split('.');
+                var index = token[token.length-1].split('.');/
                 var name = "#" + index[0];
                 $(".list-group .list-group-item").removeClass("active");
                 $(name).addClass("active");
