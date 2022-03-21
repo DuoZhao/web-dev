@@ -14,11 +14,13 @@ function App() {
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                    <Route path="/hello" exact={true} element={<HelloWorld/>}/>
-                    <Route path="/labs" exact={true} element={<Labs/>}/>
-                    {/*<Route path="/tuiter" exact={true} element={<Tuiter/>}/>*/}
-                    <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
-                    <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
+                    {/*<Route path="/hello" exact={true} element={<HelloWorld/>}>*/}
+                        <Route path="/" exact={true} element={<HelloWorld/>}/>
+                        <Route path="/labs" exact={true} element={<Labs/>}/>
+                        {/*<Route path="/tuiter" exact={true} element={<Tuiter/>}/>*/}
+                        <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
+                        <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
+                    {/*</Route>*/}
                 </Routes>
             </div>
         </BrowserRouter>
