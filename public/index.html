@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Duo Zhao- Web Dev HomePage</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
   <div id="root"></div>
@@ -13,5 +14,28 @@
 <!--    <li><a href="labs/a5/index.html">Assignment 5</a></li>-->
 <!--    <li><a href="tuiter/navigation.html">Tuiter</a></li>-->
 <!--  </ul>-->
+  <script>
+    $(function() {
+      var url = window.location.href;
+      var token = url.split('/');
+      var color = "white";
+      if (token.length > 2 && token[token.length-2] === "tuiter") {
+        color = "black";
+      }
+      $('#root').css({backgroundColor: color});
+
+      $('#root').on('DOMSubtreeModified', function(){
+        console.log("changed");
+        var url = window.location.href;
+        var token = url.split('/');
+        var color = "white";
+        if (token.length > 2 && token[token.length-2] === "tuiter") {
+          color = "black";
+        }
+        // console.log(color);
+        $('#root').css({backgroundColor: color});
+      });
+    });
+  </script>
   </body>
 </html>
