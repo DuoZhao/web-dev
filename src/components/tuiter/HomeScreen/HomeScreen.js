@@ -2,6 +2,7 @@ import React from "react";
 import NavigationSidebar from "../NavigationSidebar/index";
 import HomeComponent from "./HomeComponent";
 import PostSummaryList from "../PostSummaryList/index";
+import HomeScreenComponent from "./index"
 
 const HomeScreen = () => {
     return (
@@ -11,12 +12,15 @@ const HomeScreen = () => {
             </div>
             <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                  style={{"position": "relative"}}>
-                <HomeComponent/>
+                <HomeScreenComponent/>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <PostSummaryList/>
             </div>
         </div>
+        // <>
+        //     <HomeScreenComponent/>
+        // </>
     );
 };
 export default HomeScreen;

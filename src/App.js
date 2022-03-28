@@ -9,24 +9,40 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
+import ProfileScreen from "./components/tuiter/ProfileScreen/ProfileScreen";
+import EditProfileScreen from "./components/tuiter/ProfileScreen/EditProfileScreen";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                    {/*<Route path="/hello" exact={true} element={<HelloWorld/>}>*/}
-                        <Route path="/" exact={true} element={<HelloWorld/>}/>
-                        <Route path="/labs" exact={true} element={<Labs/>}/>
-                        {/*<Route path="/tuiter" exact={true} element={<Tuiter/>}/>*/}
-                        <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
-                        <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
-                    {/*</Route>*/}
+                    <Route path="/">
+                        <Route path="labs"
+                               element={<Labs/>}/>
+                        <Route path="hello"
+                               element={<HelloWorld/>}/>
+                        <Route path="tuiter"
+                               element={<Tuiter/>}>
+                            <Route index
+                                   element={<HomeScreen/>}/>
+                            <Route path="explore"
+                                   element={<ExploreScreen/>}/>
+                            <Route path="profile"
+                                    element={<ProfileScreen/>}/>
+                            <Route path="profile-edit"
+                                   element={<EditProfileScreen/>}/>
+                            {/*<Route path="notifications"*/}
+                            {/*       element={<NotificationScreen/>}/>*/}
+                            ...
+                        </Route>
+                    </Route>
                 </Routes>
             </div>
         </BrowserRouter>
     );
 }
+
 
 export default App;
 
