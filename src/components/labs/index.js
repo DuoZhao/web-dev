@@ -13,7 +13,7 @@ const Labs = () => {
             <Link to="/">
                 home
             </Link> |
-            <Link to="/tuiter">
+            <Link to="/tuiter/">
                 Tuiter
             </Link>
             {/*<ConditionalOutput/>*/}
