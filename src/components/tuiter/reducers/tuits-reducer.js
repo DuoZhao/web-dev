@@ -3,7 +3,6 @@ import {CREATE_TUIT, UPDATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS} from "../../actio
 const tuitsReducer = (state = [], action) => {
     switch (action.type) {
         case CREATE_TUIT:
-
             return [
                 ...state,
                 action.newTuit

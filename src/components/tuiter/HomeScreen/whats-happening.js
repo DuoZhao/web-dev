@@ -11,7 +11,7 @@ const WhatsHappening = () => {
             tuit: whatsHappening
         });
     }
-    const [newTuit, setNewTuit] = useState({tuit: 'New tuit', liked: false, likes: 0});
+    const [newTuit, setNewTuit] = useState({tuit: 'New tuit', likes: 0, postedBy:{username: "DukeZhao"}, handle: "Duke", avatarImage: "duck.jpeg"});
     return (
     <div className="row ms-5">
         <textarea className="form-control" onChange={(e) => setNewTuit({...newTuit, tuit: e.target.value})}/>

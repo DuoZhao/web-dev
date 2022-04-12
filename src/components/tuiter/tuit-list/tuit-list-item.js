@@ -17,7 +17,7 @@ const TuitListItem = ({tuit}) => {
     }
     return(
         <li className="list-group-item d-flex border-secondary justify-content-between">
-            {tuit.avatarImage && <img src={tuit.avatarImage} className="img-fluid rounded-circle wd-avatar-icon" alt="" />}
+            {tuit.avatarImage && <div className="col-1"><img src={tuit.avatarImage} className="img-fluid rounded-circle wd-avatar-icon" alt="" /></div>}
             <div className="ms-2 me-auto w-100">
                 <div className="d-flex justify-content-between">
                     <div>
